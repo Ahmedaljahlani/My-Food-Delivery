@@ -10,31 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFoodApp">
         <activity
-            android:name=".RegistrationActivity"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name=".LoginActivity"
+            android:name=".activities.DetailsDailyMealActivity"
             android:exported="false" />
         <activity
-            android:name=".WelcomeActivity"
-            android:exported="true" >
+            android:name=".activities.RegistrationActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyFoodApp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.MyFoodApp.NoActionBar">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
 
         <meta-data
